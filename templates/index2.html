@@ -61,7 +61,55 @@ input[type=text]:focus {
   <body>
     
     <div class="s005">
-      <form method="POST" action="/predict">
+
+        <form class="col s12 center-align" action="/sent_correct" method="post">
+            <!-- <div class="row">
+                <div class="input-field col s8 offset-s2">
+                    <i class="material-icons prefix">link</i>
+                    <input id="sent" type="text" name="SENT" >
+                    <label for="sent" >Enter Sentence</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12"> -->
+    
+      <!-- <button class="btn waves-effect waves-light btn-large pink accent-2" type="submit"
+              name="submit" value="submit">
+                        Submit
+                    </button> -->
+                    <fieldset>
+                        <legend>Enter a word or a sentence to check the errors!</legend>
+                        <center ><b class="glow" style="color: white; font-size: 20px;"></b> &nbsp;&nbsp; <b>
+                         
+                        <br>
+                        <div class="inner-form">
+                          <div class="input-field">
+                       
+                          <input type="text" name="text" placeholder="Search.." value="{{ s }}">
+                    <button class="btn-search" type="submit" name="submit" value="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                          <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+                        </svg>
+                      </button>
+    
+    
+                </div>
+            </div>
+            <div class="suggestion-wrap">
+
+            </div>
+                <!-- <textarea class="form-control" rows="2" id="comment" name="query6" rows="2" cols="5" autofocus>{{output1}}</textarea> -->
+                <span style="color: white; font-weight: bold; font-size: 20px;">Corrected Sentence</span>
+                <span  style="color: white; font-weight: bold; font-size: 20px;"> ⏩⏩ </span>
+                <span class="glow" style="color: white; font-weight: bold; font-size: 20px;">{{ output1 }}</span>
+                <div class="row">
+                    <div class="col-sm-9">
+                    <textarea class="form-control" rows="2" id="comment" name="query6" rows="2" cols="5" autofocus>{{output1}}</textarea>
+                </div>
+
+            </div>
+        </div>
+      <!-- <form method="POST" action="/predict">
         <fieldset>
           <legend>Type Word Or Sentence And Get Next Predicted Words!!</legend>
           <center ><b class="glow" style="color: white; font-size: 20px;"></b> &nbsp;&nbsp; <b>
@@ -69,9 +117,9 @@ input[type=text]:focus {
           <br><br>
           <div class="inner-form">
             <div class="input-field">
-             <!--  <input name="text" class="form-control" id="choices-text-preset-values" type="text" placeholder="Type to search..." /> -->
+              <input name="text" class="form-control" id="choices-text-preset-values" type="text" placeholder="Type to search..." /> 
              <input type="text" name="text" placeholder="Search.." value="{{ s }}">
-              <button class="btn-search" type="submit" name="submit" value="submit">
+              <button class="btn-search" type="button">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                   <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
                 </svg>
@@ -82,10 +130,10 @@ input[type=text]:focus {
             <span style="color: white; font-weight: bold; font-size: 20px;">Suggested Words</span>
 
             <span  style="color: white; font-weight: bold; font-size: 20px;"> ⏩⏩ </span>
-            <!-- <span style="color: black; font-weight: bold;">{{ t }}</span>
+         <span style="color: black; font-weight: bold;">{{ t }}</span>
             <span style="color: black; font-weight: bold;">{{ b }}</span>
             <span style="color: black; font-weight: bold;">{{ i }}</span>
-             -->
+            
              {% for i in t %}
                <span class="glow" style="color: white; font-weight: bold; font-size: 20px;">{{ i }}</span>
              {% endfor %}
@@ -93,13 +141,13 @@ input[type=text]:focus {
 
 
 
-            <!-- <span style="color: black; font-weight: bold;">Mens</span>
+            <span style="color: black; font-weight: bold;">Mens</span>
             <span style="color: black; font-weight: bold;">Accessories</span>
-            <span style="color: black; font-weight: bold;">Sale</span> -->
+            <span style="color: black; font-weight: bold;">Sale</span> 
            
           </div>
         </fieldset>
-      </form>
+      </form> -->
 
 
 
