@@ -1,9 +1,4 @@
-# Auto Complete System on Web using NLP and Python
 
-#### I always want to know how our keyboard can predict the next word.
-#### So I've tried to make an "Autocomplete System using NLP (Natural Language Processing) and Python. 
-#### I've used Flask for making it on the web and NLP (N-grams) concept and a text file dataset from Kaggle to Machine Learning.
+This smart editor is created with the help of python,flask and html,css and javascript
 
-Web template that I've found online:  https://colorlib.com/wp/free-css3-html5-search-form-examples/
-
-### YouTube Link:- https://www.youtube.com/watch?v=aB8PKCp6ftg
+It consists of two parts one being the grammar and spelling corrector and the other being the text prediction using n-gram model
